@@ -1,0 +1,127 @@
+.card{
+    padding: 1.2rem;
+    margin-right: 2rem;
+    width: 350px;
+    height: 330px;
+    border: 1px solid var(--color-text);
+    font-family: var(--font-family);
+
+    box-shadow: 7px 2px 28px 11px rgba(3,27,52,0.82);
+-webkit-box-shadow: 7px 2px 28px 11px rgba(3,27,52,0.82);
+-moz-box-shadow: 7px 2px 28px 11px rgba(3,27,52,0.82);
+}
+
+.card-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header .card-img{
+   flex: 1;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.card-data{
+    padding-left: 1rem;
+    color: #fff;
+    width: 100%;
+}
+
+.card-data h2{
+    font-size: 20px;
+}
+
+.card-data p{
+    font-size: 15px;
+    height: 100%;
+}
+
+.card-text p{
+    margin-top: 2rem;
+    padding: 0 1rem;
+    font-size: 17px;
+    text-align: justify;
+    hyphens: auto;
+    /* word-break: break-all; */
+    color: var(--color-text);
+}
+
+.card-icon{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card-icon img{
+  width: 60%;
+  height: 60%;
+  margin-bottom: 2rem;
+}
+
+
+@media screen and (max-width: 990px) {
+    .card{
+        margin-top: 1.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    
+    .signlang_card-container{
+      gap: 2rem;
+    }
+    .card{
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      padding: 0;
+    }
+
+    .card-header{
+        flex-direction: column;
+        margin-top: 1rem;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .card-header .card-data{
+        margin: 1rem 0;
+        padding-left: 0;
+    }
+
+    .card-header .card-icon{
+        justify-content: center;
+    }
+
+    .card-img img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .card-data h2{
+        font-size: 18px;
+    }
+
+    .card-data p{
+        font-size: 15px;
+    }
+    
+    .card-text p{
+        font-size: 15px;
+        padding-bottom: 1rem;
+        margin-top: 0;
+    }
+    
+    /* .card-icon img{
+      width: 60%;
+      height: 60%;
+      margin-bottom: 2rem;
+    } */
+    
+    
+}

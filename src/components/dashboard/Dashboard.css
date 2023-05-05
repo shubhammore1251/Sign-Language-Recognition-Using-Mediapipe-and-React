@@ -1,0 +1,239 @@
+.signlang_dashboard-container {
+  font-family: var(--font-family);
+}
+
+.signlang_header-data {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 2rem;
+}
+
+.signlang_header-data canvas {
+  height: 380px !important;
+  width: 600px !important;
+}
+
+.signlang_leader-board {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signlang_leader-board .title {
+  margin-bottom: 80px;
+}
+
+.signlang_toprank-box {
+  border: 1px solid var(--color-text);
+  width: 350px;
+  height: 250px;
+  box-shadow: 7px 2px 28px 11px rgba(3, 27, 52, 0.82);
+  -webkit-box-shadow: 7px 2px 28px 11px rgba(3, 27, 52, 0.82);
+  -moz-box-shadow: 7px 2px 28px 11px rgba(3, 27, 52, 0.82);
+  /* padding: 1rem; */
+  margin-bottom: 50px;
+}
+
+.signlang_tank-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
+
+.signlang_tank-row h3 {
+  color: #fff;
+}
+
+.signlang_tank-row h2 {
+  color: #fff;
+  font-weight: 800;
+}
+
+.signlang_dashboard-midsection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem 1rem;
+}
+
+.signlang_sign-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 2rem;
+}
+
+.signlang_sign-table table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 2rem;
+  box-shadow: 7px 2px 28px 11px rgba(3, 27, 52, 0.82);
+  -webkit-box-shadow: 7px 2px 28px 11px rgba(3, 27, 52, 0.82);
+  -moz-box-shadow: 7px 2px 28px 11px rgba(3, 27, 52, 0.82);
+  font-size: 20px;
+  border: 1px solid var(--color-text);
+}
+
+.signlang_sign-table table tr .table-heading {
+  background-color: var(--color-blog);
+  color: var(--color-subtext);
+}
+
+.signlang_sign-table table,
+th,
+td {
+  color: #fff;
+  padding: 1rem;
+}
+
+.signlang_sign-table table .sign-row td {
+  text-align: center;
+}
+
+.signlang_sign-table table .sign-row:nth-of-type(even) {
+  background-color: var(--color-footer);
+}
+
+.signlang_quotes-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 28%;
+  margin-bottom: 8rem;
+}
+
+.signlang_quotes-box div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  border: 1px solid var(--color-text);
+  color: #fff;
+
+  box-shadow: 7px 2px 28px 11px rgba(3, 27, 52, 0.82);
+  -webkit-box-shadow: 7px 2px 28px 11px rgba(3, 27, 52, 0.82);
+  -moz-box-shadow: 7px 2px 28px 11px rgba(3, 27, 52, 0.82);
+}
+
+.signlang_quotes-box blockquote {
+  font-size: 1.2rem;
+  width: 100%;
+  height: fit-content;
+  font-style: italic;
+  padding: 1.2em 30px 1.2em 60px;
+  line-height: 1.6;
+  position: relative;
+}
+
+.signlang_quotes-box blockquote::before {
+  content: "\201C";
+  color: var(--color-subtext);
+  font-size: 4em;
+  position: absolute;
+  left: 5px;
+  top: -10px;
+}
+
+
+.signlang__nodata-cont{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.signlang__nodata-cont img{
+  width: 500px;
+  height: 500px;
+}
+
+.signlang__nodata-cont h3{
+  font-size: 20px;
+  text-transform: capitalize;
+  width: 25%;
+  text-align: justify;
+  line-height: 2;
+}
+
+@media screen and (max-width: 1050px) {
+  .signlang_header-data {
+    flex-direction: column;
+  }
+
+  .signlang_dashboard-midsection {
+    flex-direction: column;
+  }
+
+  .signlang_leader-board {
+    margin-top: 5rem;
+  }
+
+  .signlang_leader-board .title {
+    margin-bottom: 50px;
+  }
+
+  .signlang_toprank-box {
+    width: 600px;
+  }
+
+  .signlang_sign-table {
+    width: 80%;
+  }
+
+  .signlang_quotes-box {
+    width: 60%;
+  }
+
+  .signlang__nodata-cont{
+    flex-direction: column;
+  }
+
+  .signlang__nodata-cont h3{
+    width: 50%;
+    margin-bottom: 10rem;
+  }
+
+  
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .signlang_toprank-box {
+    width: 300px;
+  }
+
+  .signlang_sign-table{
+    width: 100%;
+    padding: 0;
+  }
+
+  .signlang_quotes-box {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .signlang_quotes-box blockquote {
+    margin-bottom: 2rem !important;
+  }
+  
+
+  .signlang_quotes-box cite {
+    margin-top: 5rem;
+  }
+
+  .signlang__nodata-cont img{
+    width: 300px;
+    height: 300px;
+  }
+
+  .signlang__nodata-cont h3{
+    width: 90%;
+  }
+}

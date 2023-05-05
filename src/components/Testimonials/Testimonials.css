@@ -1,0 +1,40 @@
+.signlang_testimonials-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signlang_testimonial-header h2{
+   font-size: 30px;
+}
+
+.signlang_card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2rem;
+}
+
+
+@media screen and (max-width: 990px) {
+    .signlang_card-container{
+        flex-wrap: wrap;
+        padding: 0rem;
+        margin: 1rem 0;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+
+    .signlang_testimonial-header h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    .signlang_card-container{
+        margin: 2rem 0;
+    }
+    
+}

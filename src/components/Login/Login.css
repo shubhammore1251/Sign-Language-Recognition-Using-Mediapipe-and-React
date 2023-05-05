@@ -1,0 +1,104 @@
+.signlang_login-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.signlang_login-container > div{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+    padding: 3rem;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    box-shadow: 7px 2px 28px 11px rgba(3,27,52,0.82);
+-webkit-box-shadow: 7px 2px 28px 11px rgba(3,27,52,0.82);
+-moz-box-shadow: 7px 2px 28px 11px rgba(3,27,52,0.82);
+  
+}
+
+.signlang_login-img img{
+    width: 350px;
+    height: 350px;
+}
+
+.signlang_login-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--font-family);
+}
+
+.signlang_login-data h2{
+    font-size: 35px;
+    word-spacing: 5px;
+}
+
+.signlang_login-data button{
+    margin-top: 2rem;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 8px;
+    background: var(--color-blog);
+    border: 1px solid #fff;
+    outline: none;
+    cursor: pointer;
+    font-family: var(--font-family);
+}
+
+.signlang_login-data button:hover{
+    background-color: var(--color-footer);
+}
+
+.signlang_login-data button img{
+    width: 30px;
+    height: 30px;
+}
+.signlang_login-data button h3{
+   font-size: 20px;
+   color: #fff;
+}
+
+
+@media screen and (max-width: 550px) {
+    
+    .signlang_login-container{
+       margin: 8rem 0;
+    }
+    
+    .signlang_login-container > div{
+        padding: 1.5rem;
+    }
+
+    .signlang_login-img img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .signlang_login-data h2{
+        font-size: 20px;
+        word-spacing: 2px;
+    }
+
+    .signlang_login-data button{
+        width: 120px;
+        height: 40px;
+    }
+
+    .signlang_login-data button img{
+        width: 20px;
+        height: 20px;
+    }
+    .signlang_login-data button h3{
+       font-size: 18px;
+    }
+    
+    
+}

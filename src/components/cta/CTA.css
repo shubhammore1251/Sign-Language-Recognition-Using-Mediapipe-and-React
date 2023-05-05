@@ -1,0 +1,59 @@
+.signlang_cta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin: 4rem;
+    border-radius: 1rem;
+    background: var(--gradient-bar);
+}
+
+.signlang_cta-content h3{
+    font-family: var(--font-family);
+    font-size: 24px;
+    line-height: 45px;
+    font-weight: 800;
+}
+
+.signlang_cta-button button {
+    background: #000;
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .signlang_cta {
+        flex-direction: column;
+    }
+
+    .signlang_cta-button {
+        margin: 2rem 0 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .signlang_cta {
+        margin: 4rem 2rem;
+    }
+
+    .signlang_cta-content h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .signlang_cta-button button {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}

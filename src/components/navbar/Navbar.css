@@ -1,0 +1,195 @@
+.signlang_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.5rem; 
+    width: 100%;
+    border-bottom: 1px solid var(--color-text);
+}
+
+.singlang_navlinks{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 7rem;
+}
+
+.signlang_navlinks_logo{
+    margin-right: 2rem;
+}
+
+.signlang_navlinks_logo .logo{
+    width: 100px;
+    height: 90px;
+    margin-left: 5rem;
+}
+
+.signlang_navlinks_container {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.signlang_navlinks_container a {
+    padding: 0 1rem;
+}
+
+.signlang_navlinks_container p,
+.logout-data,
+.signlang__navbar-menu_container p{
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+
+}
+
+.signlang_navlinks{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.signlang_logout-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signlang_logout-data img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.signlang_logout-data button,
+.signlang__navbar-menu_container button {
+    padding: 0.5rem 1rem;
+    position: relative;
+    left: 25px;
+    color: #fff;
+    background: var(--color-subtext);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.signlang__navbar-menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.signlang__navbar-menu_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+    z-index: 1000;
+}
+
+.signlang__navbar-menu_container img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+.signlang__navbar-menu_container p {
+    margin: 2rem 0;
+}
+
+.signlang__navbar-menu_container-links-logoutdata {
+    display: none;
+}
+
+.signlang__navbar-menu_container p  a{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .signlang_navlinks_container {
+        display: none;
+    }
+
+    .signlang__navbar-menu {
+        display: flex;
+    }
+
+    .signlang_logout-data{
+      margin: 0 auto;
+    }
+    .signlang_logout-data button{
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .signlang__navbar-menu {
+        padding: 1rem 1rem;
+    }
+
+    .signlang_logout-data button{
+        margin-left: 0rem;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+   
+    .signlang_navlinks_logo .logo{
+        width: 60px;
+        height: 60px;
+        margin-left: 1rem;
+    }
+
+    .signlang_logout-data{
+        display: none;
+    }
+
+    .signlang__navbar-menu_container {
+        top: 40px;
+    }
+
+    .signlang__navbar-menu_container p a{
+        font-size: 20px;
+    }
+
+    .signlang__navbar-menu_container-links-logoutdata {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signlang__navbar-menu_container-links-logoutdata button{
+        margin-right: 50px;
+        margin-top: 20px;
+    }
+}

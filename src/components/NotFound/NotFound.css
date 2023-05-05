@@ -1,0 +1,67 @@
+.signlang_notfound-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3rem 0;
+}
+
+
+.signlang_notfound-img img{
+  width: 450px;
+  height: 450px;
+}
+
+
+.signlang_notfound-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--font-family);
+}
+
+.signlang_notfound-data p{
+    font-size: 25px;
+    font-weight: 800;
+    width: 500px;
+    text-align: center;
+}
+
+.signlang_notfound-data button{
+    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    margin: 1.5rem 0;
+    background: var(--color-subtext);
+    color: #fff;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #fff;
+}
+
+
+@media screen and (max-width: 550px) {
+
+    /* .signlang_notfound-container{
+        margin: 8.2rem 0;
+    } */
+
+    .signlang_notfound-img img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .signlang_notfound-data p{
+        font-size: 15px;
+        font-weight: 800;
+        width: 300px;
+        padding: 0 2rem;
+    }
+
+    .signlang_notfound-data button{
+        font-size: 18px;
+        width: 100px;
+        height: 35px
+    }
+}
