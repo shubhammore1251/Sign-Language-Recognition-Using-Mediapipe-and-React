@@ -4,7 +4,6 @@ import {
   Navbar,
   Footer,
   Home,
-  Login,
   Detect,
   NotFound,
   Dashboard,
@@ -66,8 +65,6 @@ function App() {
             </Layout>
           }
         />
-
-        <Route exact path="/login" element={<Login notifyMsg={notifyMsg} />} />
 
         <Route exact path="*" element={<NotFound />} />
       </Routes>
