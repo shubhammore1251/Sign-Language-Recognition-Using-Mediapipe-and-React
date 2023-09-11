@@ -16,6 +16,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { addSignData } from "../../redux/actions/signdataaction";
 import ProgressBar from "./ProgressBar/ProgressBar";
 
+import DisplayImg from "../../assests/displayGif.gif";
+
 let startTime = "";
 
 const Detect = () => {
@@ -32,6 +34,8 @@ const Detect = () => {
   const [detectedData, setDetectedData] = useState([]);
 
   const user = useSelector((state) => state.auth?.user);
+
+  const { accessToken } = useSelector((state) => state.auth);
 
   const dispatch = useDispatch();
 
@@ -100,7 +104,6 @@ const Detect = () => {
       }
     }
     if (results.gestures.length > 0) {
-      
       setDetectedData((prevData) => [
         ...prevData,
         {
@@ -110,7 +113,6 @@ const Detect = () => {
 
       setGestureOutput(results.gestures[0][0].categoryName);
       setProgress(Math.round(parseFloat(results.gestures[0][0].score) * 100));
-
     } else {
       setGestureOutput("");
       setProgress("");
@@ -222,47 +224,60 @@ const Detect = () => {
     }
     loadGestureRecognizer();
   }, [runningMode]);
-  
 
   return (
     <>
       <div className="signlang_detection-container">
-        <div style={{ position: "relative" }}>
-          <Webcam
-            audio={false}
-            ref={webcamRef}
-            // screenshotFormat="image/jpeg"
-            className="signlang_webcam"
-          />
+        {accessToken ? (
+          <>
+            <div style={{ position: "relative" }}>
+              <Webcam
+                audio={false}
+                ref={webcamRef}
+                // screenshotFormat="image/jpeg"
+                className="signlang_webcam"
+              />
 
-          <canvas ref={canvasRef} className="signlang_canvas" />
+              <canvas ref={canvasRef} className="signlang_canvas" />
 
-          <div className="signlang_data-container">
-            <button onClick={enableCam}>
-              {webcamRunning ? "Stop" : "Start"}
-            </button>
+              <div className="signlang_data-container">
+                <button onClick={enableCam}>
+                  {webcamRunning ? "Stop" : "Start"}
+                </button>
 
-            <div className="signlang_data">
-              <p className="gesture_output">{gestureOutput}</p>
+                <div className="signlang_data">
+                  <p className="gesture_output">{gestureOutput}</p>
 
-              {progress ? <ProgressBar progress={progress} /> : null}
+                  {progress ? <ProgressBar progress={progress} /> : null}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div className="signlang_imagelist-container">
-          <h2 className="gradient__text">Image</h2>
+            <div className="signlang_imagelist-container">
+              <h2 className="gradient__text">Image</h2>
 
-          <div className="signlang_image-div">
-            {currentImage ? (
-              <img src={currentImage.url} alt={`img ${currentImage.id}`} />
-            ) : (
-              <h3 className="gradient__text">
-                Click on the Start Button <br /> to practice with Images
-              </h3>
-            )}
+              <div className="signlang_image-div">
+                {currentImage ? (
+                  <img src={currentImage.url} alt={`img ${currentImage.id}`} />
+                ) : (
+                  <h3 className="gradient__text">
+                    Click on the Start Button <br /> to practice with Images
+                  </h3>
+                )}
+              </div>
+            </div>
+          </>
+        ) : 
+        (
+          <div className="signlang_detection_notLoggedIn">
+
+             <h1 className="gradient__text">Please Login !</h1>
+             <img src={DisplayImg} alt="diplay-img"/>
+             <p>
+              We Save Your Detection Data to show your progress and learning in dashboard, So please Login to Test this Detection Feature.
+             </p>
           </div>
-        </div>
+        )}
       </div>
     </>
   );

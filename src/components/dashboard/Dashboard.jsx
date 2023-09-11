@@ -12,9 +12,22 @@ import NoData from "../../assests/No-data.svg";
 
 import { quote } from "../../data/quotes";
 import Spinner from "../Spinner/Spinner";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
   const dispatch = useDispatch();
+ 
+  const navigate = useNavigate();
+
+  const { loading: authLoader ,accessToken } = useSelector((state) => state.auth);
+
+  useEffect(() => {
+    if (!authLoader && !accessToken) {
+      navigate("/");
+    }
+    dispatch(getSignData());
+    dispatch(getTopUsers());
+  }, [accessToken, authLoader, navigate,dispatch]);
 
   useEffect(() => {
     dispatch(getSignData());
@@ -49,7 +62,7 @@ const Dashboard = () => {
 
   return (
     <div className="signlang_dashboard-container">
-      {!loading ? (
+      {!(loading || authLoader) ? (
         signDataList.length > 0 ? (
           <>
             <div className="signlang_header-data">

@@ -38,7 +38,7 @@
 }
 
 .signlang_navlinks_container p,
-.logout-data,
+.auth-data,
 .signlang__navbar-menu_container p{
     color: #fff;
     font-family: var(--font-family);
@@ -59,19 +59,19 @@
    align-items: center;
 }
 
-.signlang_logout-data{
+.signlang_auth-data{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.signlang_logout-data img{
+.signlang_auth-data img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
 
-.signlang_logout-data button,
+.signlang_auth-data button,
 .signlang__navbar-menu_container button {
     padding: 0.5rem 1rem;
     position: relative;
@@ -123,7 +123,7 @@
     margin: 2rem 0;
 }
 
-.signlang__navbar-menu_container-links-logoutdata {
+.signlang__navbar-menu_container-links-authdata {
     display: none;
 }
 
@@ -133,8 +133,17 @@
 }
 
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 900px) {
     .signlang_navlinks_container {
+        display: none;
+    }
+
+    
+    .signlang_auth-data button{
+        margin-left: 0rem;
+    }
+
+    .signlang_auth-data{
         display: none;
     }
 
@@ -142,21 +151,27 @@
         display: flex;
     }
 
-    .signlang_logout-data{
-      margin: 0 auto;
-    }
-    .signlang_logout-data button{
-        margin-left: 5rem;
-    }
-}
-
-@media screen and (max-width: 700px) {
     .signlang__navbar-menu {
         padding: 1rem 1rem;
     }
 
-    .signlang_logout-data button{
-        margin-left: 0rem;
+    .signlang__navbar-menu_container-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signlang__navbar-menu_container-links-authdata {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signlang__navbar-menu_container-links-authdata button{
+        margin-right: 50px;
+        margin-top: 20px;
     }
 
 }
@@ -169,10 +184,6 @@
         margin-left: 1rem;
     }
 
-    .signlang_logout-data{
-        display: none;
-    }
-
     .signlang__navbar-menu_container {
         top: 40px;
     }
@@ -181,15 +192,4 @@
         font-size: 20px;
     }
 
-    .signlang__navbar-menu_container-links-logoutdata {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .signlang__navbar-menu_container-links-logoutdata button{
-        margin-right: 50px;
-        margin-top: 20px;
-    }
 }

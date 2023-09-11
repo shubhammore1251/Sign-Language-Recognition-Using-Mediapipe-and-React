@@ -71,7 +71,7 @@
 
 - **Published Paper:** [Paper.pdf](https://drive.google.com/file/d/1QAuSWb8op7bFkqhItBbyoqwBbxWbSZvw/view?usp=share_link)
 
-- **Dataset Link** [Sign_Dataset](https://drive.google.com/drive/folders/1LUUknqqRNHAmIZYrcgo-4n2HrM37uFa3?usp=share_link)
+- **Dataset Link:** [Sign_Dataset](https://drive.google.com/drive/folders/1LUUknqqRNHAmIZYrcgo-4n2HrM37uFa3?usp=share_link)
 
 - **Gesture Recogition Documentation:** [Mediapipe](https://developers.google.com/mediapipe/solutions/vision/gesture_recognizer)
 
