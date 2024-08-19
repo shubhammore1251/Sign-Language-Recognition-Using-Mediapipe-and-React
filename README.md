@@ -67,9 +67,9 @@
 
 ## Project Details
 
-- **Our Project Report:** [Report.pdf](https://drive.google.com/file/d/16juuwsmj64JJ915ghxV7OFlqKyAlTQpB/view?usp=share_link)
+- **Our Project Report:** [Report.pdf](https://drive.google.com/file/d/1A_gBXKfEjNwHZbtnanu82jgLrbtblQ38/view?usp=sharing)
 
-- **Published Paper:** [Paper.pdf](https://drive.google.com/file/d/1QAuSWb8op7bFkqhItBbyoqwBbxWbSZvw/view?usp=share_link)
+- **Published Paper:** [Paper.pdf](https://drive.google.com/file/d/1KEP_kAessP08Zo8zHsG9IqlP4Yuj9SO0/view?usp=sharing)
 
 - **Dataset Link:** [Sign_Dataset](https://drive.google.com/drive/folders/1LUUknqqRNHAmIZYrcgo-4n2HrM37uFa3?usp=share_link)
 
