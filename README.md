@@ -77,6 +77,12 @@
 
 - **The Model Training File is located in root folder**
 
+
+## Steps to set up the project
+
+- **Check this document for project setup:** [SetUpDoc.docx](https://docs.google.com/document/d/1siwZjc0LJQgKTn__vtzs8tMfr9OElrsThmqmRJc9dHE/edit?usp=sharing)
+
+
 ## Authors
 
 - [@shubham-more](https://github.com/shubhammore1251/)
